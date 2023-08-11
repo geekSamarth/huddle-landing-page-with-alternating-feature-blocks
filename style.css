@@ -20,6 +20,7 @@
   background-size: contain;
   background-position: left top;
   padding: 1rem 0;
+  margin-bottom: 5rem;
 }
 header{
   display: flex;
@@ -31,11 +32,12 @@ header img{
   width:7rem;
 }
 header button{
-  width: 8rem;
+  width: 7rem;
   padding: 0.4rem;
   border: none;
   border-radius: 25px;
   background-color: var(--white);
+  font-size: 0.8rem;
   font-weight:700 ;
   font-family: 'Open Sans', sans-serif;
   box-shadow: 1px 1px 8px var(--grayish-blue);
@@ -78,3 +80,25 @@ header button{
   width: 100%;
   object-fit: contain;
 }
+.data{
+  width: 900px;
+  max-width: 90%;
+  border-radius: 8px;
+  margin: 3rem auto;
+  display: flex;
+  gap: 3rem;
+  box-shadow: 0 0 15px  var(--grayish-blue);
+}
+.illustration{
+ width: 85%;
+ margin: 0 auto;
+  
+}
+.illustration img{
+  width: 100%;
+}
+.grow-together , .your-users,.flow-conversation{
+  flex-direction: column-reverse;
+}
+
+

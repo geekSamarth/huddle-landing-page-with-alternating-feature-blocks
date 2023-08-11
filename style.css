@@ -110,7 +110,7 @@ header button {
   max-width: 93%;
   margin: 2rem auto 0 auto;
   position: absolute;
-  top: 105%;
+  top: 104%;
   left: 0.8rem;
   text-align: center;
   border-radius: 10px;
@@ -139,7 +139,7 @@ header button {
 footer {
   background-color: var(--very-dark-cyan);
   color: var(--very-pale-cyan);
-  margin-top: 17rem;
+  margin-top: 15rem;
   padding: 8rem 1rem 3.5rem;
   display: flex;
   flex-direction: column;
@@ -166,7 +166,7 @@ footer {
   list-style-type: none;
 }
 .about-section ul li{
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-family: 'Open Sans', sans-serif;
   margin: 0.5rem 0 1rem;
 }

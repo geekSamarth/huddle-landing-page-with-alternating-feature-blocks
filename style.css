@@ -41,10 +41,16 @@ header button {
   border: none;
   border-radius: 25px;
   background-color: var(--white);
+  color: var(--very-dark-cyan);
   font-size: 0.8rem;
   font-weight: 700;
   font-family: "Open Sans", sans-serif;
   box-shadow: 1px 1px 8px var(--grayish-blue);
+}
+header button:hover{
+  color: var(--grayish-blue);
+  transform: translateY(0.2rem);
+  transition: all 0.1s ease-in;
 }
 .introduction section {
   padding: 1rem;
@@ -54,7 +60,7 @@ header button {
   text-align: center;
 }
 .content h1 {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   font-family: "Poppins", sans-serif;
   color: var(--very-dark-cyan);
 }
@@ -62,7 +68,6 @@ header button {
   font-size: 1rem;
   padding: 1.3rem;
   font-family: "Open Sans", sans-serif;
-  color: var(--very-dark-cyan);
 }
 .content button {
   width: 16rem;
@@ -91,7 +96,24 @@ header button {
   margin: 3rem auto;
   display: flex;
   gap: 3rem;
-  box-shadow: 0 0 15px var(--grayish-blue);
+  box-shadow: 0 6px 24px var(--grayish-blue);
+  padding: 4rem 1rem 3rem;
+}
+.content-info{
+  text-align: center;
+  padding: 0 1rem;
+}
+.content-info h2{
+  font-size: 1.3rem;
+  margin: 1rem 0;
+  color: var(--very-dark-cyan);
+  font-family: "Poppins", sans-serif;
+}
+.content-info p{
+  font-size: 0.9rem;
+  color: var(--grayish-blue);
+  font-family: "Open Sans", sans-serif;
+  opacity: 0.8;
 }
 .illustration {
   width: 85%;
@@ -122,6 +144,7 @@ header button {
 .question h2 {
   font-size: 1.2rem;
   font-family: "Poppins", sans-serif;
+  color: var(--very-dark-cyan);
   margin-top: 0.7rem;
   margin-bottom: 1.7rem;
 }
@@ -139,7 +162,7 @@ header button {
 footer {
   background-color: var(--very-dark-cyan);
   color: var(--very-pale-cyan);
-  margin-top: 15rem;
+  margin-top: 16rem;
   padding: 8rem 1rem 3.5rem;
   display: flex;
   flex-direction: column;

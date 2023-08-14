@@ -97,7 +97,6 @@ header button:hover{
   object-fit: contain;
 }
 .data {
-  width: 900px;
   max-width: 90%;
   border-radius: 10px;
   margin: 3rem auto;
@@ -135,7 +134,7 @@ header button:hover{
   flex-direction: column-reverse;
 }
 .question {
-  width: 600px;
+  width: 700px;
   max-width: 93%;
   margin: 2rem auto 0 auto;
   position: absolute;
@@ -227,6 +226,7 @@ footer {
   border: 1px solid var(--white);
   border-radius: 50%;
   font-size: 1.2rem;
+  cursor: pointer;
 }
 .icon:hover{
   border-color: var(--pink);
@@ -239,6 +239,45 @@ footer {
   font-family: 'Open Sans', sans-serif;
 }
 @media screen and (width>1170px) {
+  body{
+    overflow-x: hidden;
+  }
+  .introduction{
+    background-image: url('./images/bg-hero-desktop.svg');
+  }
+ .data{
+  flex-direction: row;
+ }
+ .question{
+  top: 103%;
+  left: 25%;
+ }
+ footer{
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+ }
+ .info{
+  width: 25rem;
+  padding-right:1rem;
+ }
+ .footer-logo img{
+  width: 15rem;
+ }
+ .about-section{
+  display: flex;
+  gap: 7rem;
+ }
+ .social-copyright{
+  display: flex;
+  flex-direction: column;
+ }
+ .social-media{
+  justify-content: start;
+ }
+ .copyright p{
+  margin-top: 10rem;
+ }
  
 }
 

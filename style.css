@@ -245,6 +245,9 @@ footer {
   .introduction{
     background-image: url('./images/bg-hero-desktop.svg');
   }
+  .first-page{
+    display: flex;
+  }
  .data{
   flex-direction: row;
  }

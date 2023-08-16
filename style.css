@@ -69,6 +69,7 @@ header button:hover{
   font-size: 1rem;
   padding: 1.3rem;
   font-family: "Open Sans", sans-serif;
+  color: var(--very-dark-cyan);
 }
 .content button {
   width: 16rem;
@@ -97,12 +98,12 @@ header button:hover{
   object-fit: contain;
 }
 .data {
-  max-width: 90%;
+  max-width: 87vw;
   border-radius: 10px;
   margin: 3rem auto;
   display: flex;
   gap: 3rem;
-  box-shadow: 0 2px 18px var(--grayish-blue);
+  box-shadow: 0 6px 24px rgb(223, 223, 223);
   padding: 4rem 1rem 3rem;
 }
 .content-info{
@@ -244,37 +245,74 @@ footer {
   }
   .introduction{
     background-image: url('./images/bg-hero-desktop.svg');
-    padding: 0 2.5rem;
+    padding: 2rem 3.5rem;
+    margin-bottom: 7rem;
   }
-  
+  header{
+    padding: 0;
+  }
+  .introduction section{
+    padding: 0;
+  }
   header img{
     width: 15rem;
   }
   .first-page{
+    width: 100vw;
     display: flex;
-    gap: 2rem;
   }
   .content{
-    width: 35%;
+    width: 34vw;
     align-self: center;
+    text-align: left;
+  }
+  .content h1{
+    font-size: 2.3rem;
+    margin: 2rem 0;
+  }
+  .content p{
+    padding: 0;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
   }
   .image{
-    width: 55%;
+    width: 52vw;
+    margin-right: 7rem;
   }
   .image img{
     width: 100%;
   }
  .data{
   flex-direction: row;
+  padding: 2rem 1rem;
+ }
+ .content-info{
+  align-self: center;
+  text-align: left;
+  width: 40vw;
+  padding: 0 2rem 0 6rem;
+ }
+ .flow-conversation{
+  flex-direction: row-reverse;
+ }
+ .content-info h2{
+  font-size: 1.5rem;
+ }
+ .illustration{
+  width: 35vw;
  }
  .question{
-  top: 103%;
+  top: 104%;
   left: 25%;
+ }
+ .question h2{
+  font-size: 1.7rem;
  }
  footer{
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  margin-top: 15rem;
  }
  .info{
   width: 25rem;

@@ -244,9 +244,25 @@ footer {
   }
   .introduction{
     background-image: url('./images/bg-hero-desktop.svg');
+    padding: 0 2.5rem;
+  }
+  
+  header img{
+    width: 15rem;
   }
   .first-page{
     display: flex;
+    gap: 2rem;
+  }
+  .content{
+    width: 35%;
+    align-self: center;
+  }
+  .image{
+    width: 55%;
+  }
+  .image img{
+    width: 100%;
   }
  .data{
   flex-direction: row;
@@ -271,16 +287,10 @@ footer {
   display: flex;
   gap: 7rem;
  }
- .social-copyright{
-  display: flex;
-  flex-direction: column;
- }
  .social-media{
   justify-content: start;
  }
- .copyright p{
-  margin-top: 10rem;
- }
+ 
  
 }
 

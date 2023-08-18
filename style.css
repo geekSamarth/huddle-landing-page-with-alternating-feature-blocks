@@ -16,7 +16,7 @@
   z-index: 1;
 }
 .introduction {
-  min-height: 100vh;
+  min-height: 80vh;
   width: 100vw;
   background-color: var(--very-pale-cyan);
   background-image: url("./images/bg-hero-mobile.svg");
@@ -47,7 +47,7 @@ header button {
   font-family: "Open Sans", sans-serif;
   box-shadow: 1px 1px 8px var(--grayish-blue);
 }
-header button:hover{
+header button:hover {
   color: var(--grayish-blue);
   transform: translateY(-0.2rem);
   transition: all 0.1s ease-in;
@@ -84,7 +84,7 @@ header button:hover{
   margin: 1rem 0 3.5rem 0;
   cursor: pointer;
 }
-.content button:hover{
+.content button:hover {
   opacity: 0.83;
   transform: translateY(-0.2rem);
   transition: all 0.1s ease-in;
@@ -106,17 +106,17 @@ header button:hover{
   box-shadow: 0 6px 24px rgb(223, 223, 223);
   padding: 4rem 1rem 3rem;
 }
-.content-info{
+.content-info {
   text-align: center;
   padding: 0 1rem;
 }
-.content-info h2{
+.content-info h2 {
   font-size: 1.3rem;
   margin: 1rem 0;
   color: var(--very-dark-cyan);
   font-family: "Poppins", sans-serif;
 }
-.content-info p{
+.content-info p {
   font-size: 0.9rem;
   color: var(--grayish-blue);
   font-family: "Open Sans", sans-serif;
@@ -137,10 +137,10 @@ header button:hover{
 .question {
   width: 700px;
   max-width: 93%;
-  margin: 2rem auto 0 auto;
+  margin: 2rem auto 0;
   position: absolute;
   top: 104%;
-  left: 0.8rem;
+  left: 3%;
   text-align: center;
   border-radius: 10px;
   box-shadow: 0 0 5px var(--grayish-blue);
@@ -167,7 +167,7 @@ header button:hover{
   box-shadow: 1px 1px 8px var(--grayish-blue);
   cursor: pointer;
 }
-.question button:hover{
+.question button:hover {
   opacity: 0.75;
   transform: translateY(-0.2rem);
   transition: all 0.1s ease-in;
@@ -179,9 +179,14 @@ footer {
   padding: 8rem 1rem 3.5rem;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
 }
-.footer-logo img{
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.footer-logo img {
   width: 10rem;
 }
 .info {
@@ -191,37 +196,37 @@ footer {
   margin: 1rem 0;
   padding: 0.3rem 0;
 }
-.location-logo{
+.location-logo {
   align-self: self-start;
 }
-.info p{
-  font-size: 1rem;
-  font-family: 'Open Sans', sans-serif;
+.info p {
+  font-size: 1.2rem;
+  font-family: "Open Sans", sans-serif;
 }
-.about-section ul{
+.about-section ul {
   list-style-type: none;
 }
-.about-section ul li{
-  font-size: 1.1rem;
-  font-family: 'Open Sans', sans-serif;
+.about-section ul li {
+  font-size: 1.2rem;
+  font-family: "Open Sans", sans-serif;
   margin: 0.5rem 0 1rem;
 }
-.about-section ul li:hover{
+.about-section ul li:hover {
   text-decoration: underline;
   cursor: pointer;
   transition: all 0.1s ease-in;
 }
-.social-media{
+.social-media {
   display: flex;
   gap: 1rem;
   justify-content: center;
   align-items: center;
   margin-bottom: 2rem;
 }
-.icon{
- display: flex;
- justify-content: center;
- align-items: center;
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 2.5rem;
   height: 2.5rem;
   border: 1px solid var(--white);
@@ -229,107 +234,118 @@ footer {
   font-size: 1.2rem;
   cursor: pointer;
 }
-.icon:hover{
+.icon:hover {
   border-color: var(--pink);
   transition: all 0.1s ease-in-out;
   color: var(--pink);
 }
-.copyright p{
+.copyright p {
   text-align: center;
   font-size: 0.8rem;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 @media screen and (width>1170px) {
-  body{
+  body {
     overflow-x: hidden;
   }
-  .introduction{
-    background-image: url('./images/bg-hero-desktop.svg');
+  .introduction {
+    background-image: url("./images/bg-hero-desktop.svg");
     padding: 2rem 3.5rem;
-    margin-bottom: 7rem;
+    margin-bottom: 6rem;
   }
-  header{
+  header {
     padding: 0;
   }
-  .introduction section{
+  .introduction section {
     padding: 0;
   }
-  header img{
+  header img {
     width: 15rem;
   }
-  .first-page{
+  .first-page {
     width: 100vw;
     display: flex;
   }
-  .content{
+  .content {
     width: 34vw;
     align-self: center;
     text-align: left;
   }
-  .content h1{
+  .content h1 {
     font-size: 2.3rem;
     margin: 2rem 0;
   }
-  .content p{
+  .content p {
     padding: 0;
     line-height: 1.5;
     margin-bottom: 1.5rem;
   }
-  .image{
+  .image {
     width: 52vw;
     margin-right: 7rem;
   }
-  .image img{
+  .image img {
     width: 100%;
   }
- .data{
-  flex-direction: row;
-  padding: 2rem 1rem;
- }
- .content-info{
-  align-self: center;
-  text-align: left;
-  width: 40vw;
-  padding: 0 2rem 0 6rem;
- }
- .flow-conversation{
-  flex-direction: row-reverse;
- }
- .content-info h2{
-  font-size: 1.5rem;
- }
- .illustration{
-  width: 35vw;
- }
- .question{
-  top: 104%;
-  left: 25%;
- }
- .question h2{
-  font-size: 1.7rem;
- }
- footer{
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 15rem;
- }
- .info{
-  width: 25rem;
-  padding-right:1rem;
- }
- .footer-logo img{
-  width: 15rem;
- }
- .about-section{
-  display: flex;
-  gap: 7rem;
- }
- .social-media{
-  justify-content: start;
- }
- 
- 
+  .data {
+    flex-direction: row;
+    padding: 2rem 1rem;
+  }
+  .content-info {
+    align-self: center;
+    text-align: left;
+    width: 40vw;
+    padding: 0 2rem 0 6rem;
+  }
+  .flow-conversation {
+    flex-direction: row-reverse;
+  }
+  .content-info h2 {
+    font-size: 1.5rem;
+  }
+  .illustration {
+    width: 35vw;
+  }
+  .question {
+    top: 104%;
+    left: 24%;
+  }
+  .question h2 {
+    font-size: 1.7rem;
+  }
+  footer {
+    margin-top: 15rem;
+  }
+  .footer-info {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 1.5rem 0 3rem;
+  }
+  .info {
+    width: 25rem;
+    padding-right: 1rem;
+  }
+  .footer-logo img {
+    width: 15rem;
+  }
+  .info p{
+    font-size: 1.1rem;
+  }
+  .about-section ul li{
+    font-size: 1.1rem;
+  }
+  .about-section {
+    display: flex;
+    gap: 5rem;
+  }
+  .social-info{
+    margin-right: 7rem;
+  }
+  .copyright{
+    margin-right: 3rem;
+  }
+  .copyright p{
+    text-align: right;
+  }
 }
-
-

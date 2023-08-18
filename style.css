@@ -12,12 +12,10 @@
   --white: #fff;
 }
 .wrapper {
+  /* max-width: 100%; */
   position: relative;
-  z-index: 1;
 }
 .introduction {
-  min-height: 80vh;
-  width: 100vw;
   background-color: var(--very-pale-cyan);
   background-image: url("./images/bg-hero-mobile.svg");
   background-repeat: no-repeat;
@@ -243,6 +241,48 @@ footer {
   text-align: center;
   font-size: 0.8rem;
   font-family: "Open Sans", sans-serif;
+}
+@media screen and (1169px>=width>=600px){
+  .first-page{
+    display: flex;
+  }
+  .content{
+    width: 45vw;
+  }
+  .image{
+    width: 50vw;
+  }
+  .data{
+    flex-direction: row;
+  }
+  .content-info{
+    align-self: center;
+  }
+  .flow-conversation{
+    flex-direction: row-reverse;
+  }
+  .question{
+    width: 60vw;
+    top: 105%;
+    left: 16%;
+  }
+  .footer-info{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .contact-info{
+    width: 40vw;
+  }
+  .info p{
+    font-size: 1rem;
+  }
+  .about-section ul li{
+    font-size: 1rem;
+  }
+  .copyright p{
+    text-align: right;
+  }
 }
 @media screen and (width>1170px) {
   body {
